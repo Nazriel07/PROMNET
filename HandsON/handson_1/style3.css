@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "inter";
+    src: url(Inter_24pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: "opensans";
+    src: url(OpenSans_SemiCondensed-Regular.ttf);
+}
+
+body{
+    background-image: linear-gradient(#F8F9FA 0%, #E0E0E0 100%); 
+    background-repeat: repeat; 
+    font-family: "inter", sans-serif;
+    min-height: 100vh;
+    }
+
+header{
+    background-color: #E9ECEF;
+    display: grid;
+    gap: 1px;}
+    
+    .judul{
+        font-family: sans-serif;
+        font-size: 40px;
+        margin-left: 50px;}
+
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        nav .countiner{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 50px;
+        }
+
+        a{
+            font-family: sans-serif;
+            color: #000000;
+            text-decoration: none;
+            }
+
+
+h2{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+    .wa{
+        border: 1px solid black;
+        border-radius: 100px;
+        box-shadow: 0px 30px 30px rgba(13, 198, 50, 0.5);
+        margin: 10px;
+        margin-top: 50px;
+        margin-left: 40px;
+        position: relative;  
+        mix-blend-mode: multiply;
+    }
+
+    .ig{
+        border: 1px solid black;
+        border-radius: 100px;
+        box-shadow: 0px 30px 30px rgba(193, 53, 132, 0.5);
+        margin: 10px;
+        margin-top: 50px;
+        margin-left: 40px;
+        position: relative;  
+        mix-blend-mode: multiply;
+    }
+
+    .tt{
+        border: 1px solid black;
+        border-radius: 100px;
+        box-shadow: -5px 10px 20px rgba(37, 244, 238, 0.4), 5px 10px 20px rgba(254, 44, 85, 0.4);
+        margin: 10px;
+        margin-top: 50px;
+        margin-left: 40px;
+        position: relative;  
+        mix-blend-mode: multiply;
+    }
+
+.footer{ 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap:40px;}
+
+    .suku{ 
+        grid-column: span 5 / span 5;
+        grid-row-start: 5;
+        margin-left: 10px;}
+
+
+@media(max-width : 768px){
+    header{
+        background-color: #E9ECEF;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        }
+
+        .judul{
+        font-family: sans-serif;
+        font-size: 40px;
+        margin-left: 10px;
+        }
+
+        nav {
+        margin-top: 15px;
+        }
+
+        nav .countiner{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 20px;
+        }
+
+    .wa, .ig, .tt{
+        width: 500px;
+    }
+
+    .footer{
+        gap: 10px;
+    }
+}

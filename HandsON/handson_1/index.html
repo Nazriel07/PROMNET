@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Nazriel Purkon</title>
+    <link rel="shortcut icon" href="icon2.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="judul">Home</h1>
+            <div class="countiner">
+                <a href="index.html"><b>Home</b></a>
+                <a href="index2.html"><b>About Me</b></a>
+                <a href="index3.html"><b>Contact</b></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="parent-intro">
+            <div class="intro">
+                <h1 class="nama">Muhamad Nazriel Purkon</h1>
+                <p>Hallo Semuanya, perkenalkan nama aku Muhamad Nazriel Purkon, kalian bisa panggil aku Nazriel atau Jril, Hobi aku main game sama baca Manwha. Salam kenal Semuanya</p>
+            </div>
+
+            <img width="300" src="icon2.jpg" alt="Pria tamfan">
+        </div>
+        <div class="identitas">
+            <section class="hobi">
+                <table border="2">
+                    <caption class="jtabel"><b>Hobi Teman</b></caption>
+                    <thead class="tabhead">
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Hobi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td class="td1"><center>1</center></td>
+                        <td class="td1">Zahwan</td>
+                        <td class="td1">Main Game</td>
+                    </tbody>
+                    <tbody>
+                        <td class="td2"><center>2</center></td>
+                        <td class="td2">Dhafin</td>
+                        <td class="td2">Touring</td>
+                    </tbody>
+                    <tbody>
+                        <td class="td1"><center>3</center></td>
+                        <td class="td1">Adzka</td>
+                        <td class="td1">Nonton</td>
+                    </tbody>
+                    <tbody>
+                        <td class="td2"><center>4</center></td>
+                        <td class="td2">Salwa</ td>
+                        <td class="td2">Nyanyi</td>
+                    </tbody>
+                    <tbody>
+                        <td class="td1"><center>5</center></td>
+                        <td class="td1">Fery</td>
+                        <td class="td1">Badminton</td>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="data-diri">
+                <form action="">
+                    <div>
+                        <label for="nama">Nama :</label><br>
+                        <input type="text" id="nama" name="tex" class="teks" required>
+                    </div>
+                    <div>
+                        <label for="password">Password :</label><br>
+                        <input type="password" id="password" name="password" class="teks" required>
+                    </div>
+                    <div>
+                        <label for="email">Email :</label><br>
+                        <input type="email" id="email" name="email" class="teks" required>
+                    </div>
+                    <div>
+                        <label for="date">Tanggal Lahir :</label><br>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div>
+                        <label for="usia">Usia (17-60 tahun) :</label><br>
+                        <input type="number" id="usia" name="usia" min="17" max="60" step="1" class="usia" required>
+                    </div>
+                    <div>
+                        <label for="gender">Jenis Kelamin :</label><br>
+                        <input type="radio" id="Laki-laki" name="gender" value="Laki-laki" required>
+                        <label for="Laki-laki">Laki-laki</label><br>
+                        <input type="radio" id="Perempuan" name="gender" value="Perempuan" required>
+                        <label for="Perempuan">Perempuan</label>
+                    </div>
+                    <div>
+                        <label for="Hobi">Hobi :</label><br>
+                        <input type="checkbox" id="Hobi" name="Hobi">
+                        <label for="Hobi">Badminton</label><br>
+                        <input type="checkbox" id="Hobi" name="Hobi">
+                        <label for="Hobi">Main Game</label><br>
+                        <input type="checkbox" id="Hobi" name="Hobi">
+                        <label for="Hobi">Main Rubik</label>
+                    </div>    
+                    <div>
+                        <label for="Prodi">Pilih Program Studi :</label><br>    
+                        <select name="Prodi" id="Prodi" required>
+                            <option value="Pendidikan Ilmu Komputer">Pendidikan Ilmu Komputer</option>
+                            <option value="Ilmu Komputer">Ilmu Komputer</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Foto">Pas Foto :</label><br>
+                        <input type="file" id="Foto" name="Foto" class="foto" required>
+                    </div>
+                    <div>
+                        <label for="Komentar">Komentar :</label><br>
+                        <textarea name="textarea" id="textarea"></textarea>
+                    </div>
+
+                    <input type="submit" value="Kirim" class="submit">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="suku">
+            &copy; 2026 My Profile. Hak cipta dilindungi
+        </p>
+    </footer>
+</body>
+</html>

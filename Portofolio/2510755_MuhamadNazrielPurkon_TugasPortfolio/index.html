@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Portofolio - Nazriel</title>
+    <link rel="shortcut icon" href="icont_no_bg-removebg-preview.png" type="image/x-icon">
+    <style type="text/tailwindcss">
+    @theme{
+        --color-primary: #091540;
+        --color-secondary: #1B2CC1;
+        --color-third: #7692FF;
+        --color-tersier: #ABD2FA;
+        --font-one: "robotoc";
+        --font-two: "averia";
+        --font-three: "abeezee";
+        --font-four: "inter";
+    }
+    </style>
+
+    <style>
+        @font-face {
+            font-family: robotoc;
+            src: url("./RobotoCondensed-Regular.ttf");
+        }
+        @font-face {
+            font-family: averia;
+            src: url("./AveriaSerifLibre-Regular.ttf");
+        }
+        @font-face {
+            font-family: abeezee;
+            src: url("./ABeeZee-Regular.ttf");
+        }
+        @font-face {
+            font-family: inter ;
+            src: url("./Inter_28pt-Regular.ttf");
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden font-four">
+
+    <!-- navbar -->
+    <div class="fixed w-full z-90 flex flex-col backdrop-blur-md shadow-md h-40 lg:flex-row">
+        <div class="z-90 mt-2 fixed w-full flex justify-center lg:justify-between lg:m-7 lg:ml-15">
+            <a href="#home" class="rounded-full border-2 border-white bg-third/40 w-15 lg:w-25 lg:h-25 flex justify-center lg:items-center">
+                <img class="h-15 w-10 lg:h-20 lg:w-15" src="icont_no_bg-removebg-preview.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="w-full text-white flex flex-col justify-between items-center fixed z-90 lg:flex-row">
+            <div class="flex justify-center p-3 mt-15 lg:m-12 lg:ml-40">
+                <a href="#home" class="flex justify-between items-center gap-4">
+                    <span class="font-one ml-1 text-xl font-bold text-white lg:text-4xl">Nazriel</span>
+                </a>
+                </div>
+                    <div class="flex justify-center font-two w-full px-2 lg:ml-200">
+                        <div class="flex flex-wrap justify-center gap-2 md:gap-0 md:ml-10 md:flex md:space-x-10 text-sm md:text-md">
+                            <a href="#home" class="relative text-white hover:text-amber-400 px-3 py-2 text-l lg:text-2xl font-medium transition-all duration-300 hover:-translate-y-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all after:duration-300 hover:after:w-full">
+                                Home
+                            </a>
+                            <a href="#aboutme" class="relative text-white hover:text-amber-400 px-3 py-2 text-l lg:text-2xl font-medium transition-all duration-300 hover:-translate-y-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all after:duration-300 hover:after:w-full">
+                                About
+                            </a>
+                            <a href="#skills" class="relative text-white hover:text-amber-400 px-3 py-2 text-l lg:text-2xl font-medium transition-all duration-300 hover:-translate-y-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all after:duration-300 hover:after:w-full">
+                                Skills
+                            </a>
+                            <a href="#project" class="relative text-white hover:text-amber-400 px-3 py-2 text-l lg:text-2xl font-medium transition-all duration-300 hover:-translate-y-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all after:duration-300 hover:after:w-full">
+                                Project
+                            </a>
+                            <a href="#contact" class="relative text-white hover:text-amber-400 px-3 py-2 text-l lg:text-2xl font-medium transition-all duration-300 hover:-translate-y-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all after:duration-300 hover:after:w-full">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </div>
+
+    <!-- home -->
+    <section id="home" class="min-h-screen flex flex-col-reverse md:flex-row justify-center items-center gap-10  md:px-20 pt-32 md:pt-24 pb-12 bg-gradient-to-b from-primary via-tersier to-secondary/70">
+        <div class="lg:ml-20 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left md:mt-0">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl lg:w-300 font-bold text-white leading-tight">Muhamad Nazriel Purkon</h1>
+            <p class="font-two w-full text-gray-200 text-lg md:text-xl lg:text-xl mt-6 leading-relaxed">
+                Halo, saya Nazriel seorang mahasiswa Universitas Pendidikan Indonesia yang tertarik dengan dunia Pemograman
+            </p>
+        </div>
+        <div class="m-10 w-full md:w-1/2 flex justify-center">
+            <img src="gatau.png" alt="Nazriel" class="rounded-full w-80 lg:h-200 lg:w-150 lg:mb-50 object-cover pt-25 [mask-image:linear-gradient(to_bottom,black_70%,transparent_93%)]">
+        </div>
+    </section>
+
+    <!-- about me -->
+    <section id="aboutme" class="min-h-screen flex justify-center items-center bg-gradient-to-b from-secondary/70 via-third to-third/30 py-20 px-4">
+        <div class="mt-32 lg:mt-40 bg-white/10 backdrop-blur-md border border-white/20 w-full max-w-5xl min-h-[60vh] rounded-2xl shadow-2xl p-10 md:p-12 flex flex-col items-center gap-10 text-white text-center">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-wide border-b-2 border-white pb-2">About Me</h1>
+            <p class="line-clamp-15 text-justify text-lg md:text-2xl leading-relaxed break-words max-w-3xl">
+                Halo! Saya Muhamad Nazriel Purkon, biasa dipanggil Nazriel. Saya adalah seorang mahasiswa di Universitas Pendidikan Indonesia (UPI) yang memiliki antusiasme tinggi terhadap dunia teknologi dan industri kreatif. Bagi saya, teknologi adalah medium terbaik untuk menuangkan ide menjadi karya nyata. Minat dan eksplorasi saya saat ini mencakup pengembangan perangkat lunak secara umum. Di luar ranah pemrograman, saya juga memiliki keahlian di bidang multimedia; saya terbiasa melakukan proses editing video dan foto, serta merancang aset visual menggunakan pemodelan 3D di Blender. Saya percaya bahwa keahlian teknis dan kreatif harus selalu diimbangi dengan kemampuan kolaborasi yang baik. Oleh karena itu, saya terus mengasah keterampilan komunikasi dan kerja sama tim dalam setiap proyek atau kesempatan yang ada. Saya selalu bersemangat untuk mengeksplorasi hal-hal baru dan siap membawa dampak positif pada tantangan proyek berikutnya!
+            </p>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="min-h-screen flex justify-center items-center bg-gradient-to-b from-third/30 via-sky-400/40 to-sky-800/50 py-20 px-4">
+        <div class="mt-32 lg:mt-30 bg-sky-200/50 backdrop-blur-md border border-white/40 w-full max-w-5xl min-h-[60vh] rounded-2xl shadow-2xl p-8 lg:p-12 flex flex-col items-center gap-7">
+            <h1 class="mb-5 text-4xl lg:text-5xl font-bold text-neutral-800 tracking-wide font-sans">SKILLS</h1>
+            <div class="flex flex-wrap justify-center gap-3 lg:gap-36">
+                <div class="group h-24 w-24 md:h-30 md:w-30 lg:h-40 lg:w-40 [perspective:1000px] cursor-pointer">
+                    <div class="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden]">
+                            <img src="icon blender.png" alt="blender" class="h-12 md:h-15 lg:h-20">
+                        </div>
+                        <div class="absolute inset-0 bg-red-400 border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                            <span class="text-white font-bold text-2xl lg:text-4xl">15%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group h-24 w-24 md:h-30 md:w-30 lg:h-40 lg:w-40 [perspective:1000px] cursor-pointer">
+                    <div class="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white border-3 border-white shadow-md rounded-full flex justify-center items-center overflow-hidden [backface-visibility:hidden]">
+                            <img src="Icon Capcut.png" alt="Capcut" class="h-14 md:h-18 lg:h-22 w-full object-cover">
+                        </div>
+                        <div class="absolute inset-0 bg-yellow-400 border-3 border-white shadow-md rounded-full flex justify-center items-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                            <span class="text-white font-bold text-2xl lg:text-4xl">75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group h-24 w-24 md:h-30 md:w-30 lg:h-40 lg:w-40 [perspective:1000px] cursor-pointer">
+                    <div class="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden]">
+                            <img src="icon_Canva.png" alt="Canva" class="h-16 lg:h-30">
+                        </div>
+                        <div class="absolute inset-0 bg-yellow-400 border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                            <span class="text-white font-bold text-2xl lg:text-4xl">70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-3 lg:gap-36">
+                <div class="group h-24 w-24 md:h-30 md:w-30 lg:h-40 lg:w-40 [perspective:1000px] cursor-pointer">
+                    <div class="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden]">
+                            <img src="icon_HTML.png" alt="HTML" class="h-12 lg:h-25">
+                        </div>
+                        <div class="absolute inset-0 bg-green-500 border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                            <span class="text-white font-bold text-2xl lg:text-4xl">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group h-24 w-24 md:h-30 md:w-30 lg:h-40 lg:w-40 [perspective:1000px] cursor-pointer">
+                    <div class="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden]">
+                            <img src="icon_CSS.png" alt="CSS" class="h-12 lg:h-25">
+                        </div>
+                        <div class="absolute inset-0 bg-green-500 border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                            <span class="text-white font-bold text-2xl lg:text-4xl">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group h-24 w-24 md:h-30 md:w-30 lg:h-40 lg:w-40 [perspective:1000px] cursor-pointer">
+                    <div class="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden]">
+                            <img src="icon_C.png" alt="bahasa C" class="h-16 lg:h-30">
+                        </div>
+                        <div class="absolute inset-0 bg-yellow-500 border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                            <span class="text-white font-bold text-2xl lg:text-4xl">72%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-3 lg:gap-36">
+                <div class="group h-24 w-24 md:h-30 md:w-30 lg:h-40 lg:w-40 [perspective:1000px] cursor-pointer">
+                    <div class="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden]">
+                            <img src="icon_Snapseed.png" alt="Snapseed" class="h-12 lg:h-25">
+                        </div>
+                        <div class="absolute inset-0 bg-green-500 border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                            <span class="text-white font-bold text-2xl lg:text-4xl">83%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group h-24 w-24 md:h-30 md:w-30 lg:h-40 lg:w-40 [perspective:1000px] cursor-pointer">
+                    <div class="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden]">
+                            <img src="icon_Docs.png" alt="Docs" class="h-16 lg:h-30">
+                        </div>
+                        <div class="absolute inset-0 bg-green-500 border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                            <span class="text-white font-bold text-2xl lg:text-4xl">90%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group h-24 w-24 md:h-30 md:w-30 lg:h-40 lg:w-40 [perspective:1000px] cursor-pointer">
+                    <div class="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0 bg-white border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden]">
+                            <img src="icon_ SpreadSheet.png" alt="SpreadSheet" class="h-16 lg:h-30">
+                        </div>
+                        <div class="absolute inset-0 bg-green-600 border-3 border-white shadow-xl rounded-full flex justify-center items-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                            <span class="text-white font-bold text-2xl lg:text-4xl">93%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- project -->
+    <section id="project" class="min-h-screen text-black flex justify-center items-center bg-gradient-to-b from-sky-800/50 via-sky-200 to-sky-200 py-20 px-4">
+        <div class="lg:mt-30 mt-20 bg-white/40 backdrop-blur-md border-4 border-sky-200/90 w-full max-w-5xl min-h-[70vh] rounded-2xl shadow-2xl p-8 lg:p-20 flex flex-col items-center gap-6 lg:justify-between ">
+            <h1 class="mb-5 text-4xl md:text-5xl font-bold text-black tracking-wide font-sans">PROJECT</h1>
+            <div class="lg:mr-40 p-2 bg-blur border-2 border-sky-300 rounded-2xl flex flex-col items-center shadow-md w-full lg:h-100 lg:w-200">
+                <img src="Screenshot 2026-09-27 213802.png" alt="Tubes" class="h-40 w-full lg:h-85 lg:w-200 object-cover rounded-2xl shadow-md">
+                <p class="text-xl text-center mt-2">Tubes sistem Tiket BUS</p>
+            </div>
+            <div class="lg:ml-40 p-3 bg-blur border-2 border-sky-300 rounded-2xl flex flex-col items-center shadow-md w-full lg:h-100 lg:w-200">
+                <img src="Screenshot 2026-09-27 214807.png" alt="Prjocet Game" class="h-40 w-full lg:h-85 lg:w-200 object-cover rounded-2xl shadow-md">
+                <p class="text-xl text-center mt-2">Project Game Keyborne</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="min-h-screen text-black flex justify-center items-center bg-gradient-to-b from-sky-200 via-sky-200 to-sky-300 py-20 px-4">
+        <div class="mt-20 md:mt-30 bg-white/40 backdrop-blur-md border-4 border-white/50 w-full max-w-5xl min-h-[70vh] rounded-2xl shadow-2xl p-8 md:p-12 flex flex-col">
+            <h1 class="mb-5 text-4xl md:text-5xl font-bold text-black tracking-wide flex justify-center font-sans">Contact Me</h1>
+            <div class="m-3">
+                <form action="#" method="POST">
+                    <div>
+                        <label for="nama" class="text-sm font-medium font-bold text-sky-900 mb-1">Nama:</label>
+                        <input type="text" id="name" name="nama" required placeholder="Masukkan Nama Anda" class="w-full px-4 py-2 bg-sky-700/20 border border-white rounded-md text-white placeholder-gray-500 focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-300/50 shadow-md transition-colors">
+                    </div>
+                    <div>
+                        <label for="email" class="text-sm font-medium text-sky-900 mb-1">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="alamat@email.com" class="w-full px-4 py-2 bg-sky-700/20 border border-white rounded-md text-white placeholder-gray-500 focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-300/50 shadow-md transition-colors">
+                    </div>
+                    <div>
+                        <label for="message" class="text-sm font-medium text-sky-900 mb-1">Pesan:</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Tulis pesan Anda di sini..." class="w-full px-4 py-2 bg-sky-700/20 border border-white rounded-md text-white placeholder-gray-500 focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-300/50 shadow-md transition-colors"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-2 px-4 mt-2 bg-sky-500/50 hover:bg-amber-400 text-sky-900 font-bold rounded-md transition-colors duration-300 shadow-md">Kirim Pesan</button>
+                </form>
+            </div>
+            <div class="py-10 flex flex-col gap-5 lg:gap-10">
+                <h2 class="font-bold text-3xl text-sky-900 flex justify-center">Tautan</h2>
+                <div class="flex flex-wrap justify-center gap-6 lg:gap-50">
+                    <div class="flex justify-center items-center border-2 border-white rounded-full h-15 w-15 lg:h-30 lg:w-30 bg-sky-300/40 shadow-md lg:hover:-translate-y-2 lg:hover:scale-110 lg:hover:shadow-xl lg:transition-all lg:cursor-pointer">
+                        <a href="https://wa.me/+6289677678060">
+                            <img src="icon_WhatsApp.png" alt="WhatsApp" class="h-10 lg:h-30">
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center border-2 border-white rounded-full h-15 w-15 lg:h-30 lg:w-30 bg-sky-300/40 shadow-md lg:hover:-translate-y-2 lg:hover:scale-110 lg:hover:shadow-xl lg:transition-all lg:cursor-pointer">
+                        <a href="https://www.instagram.com/rilz_n?igsi=YzhiaTVwOWhjOWY4">
+                            <img src="icon_Instagram.png" alt="Instagram" class="h-8 lg:h-20">
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center border-2 border-white rounded-full h-15 w-15 lg:h-30 lg:w-30 bg-sky-300/40 shadow-md lg:hover:-translate-y-2 lg:hover:scale-110 lg:hover:shadow-xl lg:transition-all lg:cursor-pointer">
+                        <a href="https://www.tiktok.com/@narjiil?_r=1&_t=ZS-99MMKSzOSfd">
+                            <img src="icon_Tiktok.png" alt="Tiktok" class="h-8 lg:h-20 bg-white rounded-full">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-10 bg-sky-700 flex flex-col items-center gap-3 lg:gap-10">
+        <div class="flex flex-wrap justify-center text-center md:text-left gap-10 lg:gap-70 mt-4">
+            <h2 class="text-white lg:text-4xl text-xl flex items-center justify-center font-one">Muhamad <br>Nazriel <br>Purkon</h2>
+            <div class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-30 font-three">
+                <a href="#home" class="relative text-white hover:text-amber-400 px-3 py-2 text-l lg:text-2xl font-medium transition-all duration-300 hover:-translate-y-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all after:duration-300 hover:after:w-full">
+                    Home
+                </a>
+                <a href="#aboutme" class="relative text-white hover:text-amber-400 px-3 py-2 text-l lg:text-2xl font-medium transition-all duration-300 hover:-translate-y-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all after:duration-300 hover:after:w-full">
+                    About
+                </a>
+                <a href="#skills" class="relative text-white hover:text-amber-400 px-3 py-2 text-l lg:text-2xl font-medium transition-all duration-300 hover:-translate-y-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all after:duration-300 hover:after:w-full">
+                    Skills
+                </a>
+                <a href="#project" class="relative text-white hover:text-amber-400 px-3 py-2 text-l lg:text-2xl font-medium transition-all duration-300 hover:-translate-y-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all after:duration-300 hover:after:w-full">
+                    Project
+                </a>
+                <a href="#contact" class="relative text-white hover:text-amber-400 px-3 py-2 text-l lg:text-2xl font-medium transition-all duration-300 hover:-translate-y-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-amber-400 after:transition-all after:duration-300 hover:after:w-full">
+                    Contact
+                </a>
+            </div>
+            <img src="icont_no_bg-removebg-preview.png" alt="Logo" class="h-30 lg:h-30">
+        </div>
+        <div class="mt-4">
+            <p class="text-white lg:text-l">&copy; Portofolio-Nazriel</p>
+        </div>
+    </footer>
+
+</body>
+</html>

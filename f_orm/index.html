@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus</title>
+</head>
+<body>
+    <form action="DataPeserta" method="post">
+        <div>
+            <label for="nama">Nama Lenkap</label>
+            <input type="text" id="nama" name="nama" required>    
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="telepon">Nomor Telepon</label>
+            <input type="tel" id="telepon" name="telepon">
+        </div>
+        <div>
+            <label for="tanggalLahir">Tanggal Lahir</label>
+            <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+        </div>
+        <div>
+        <label for="instansti">Asal Instansti</label>
+            <select name="instansti" id="instansti">
+                <option value="unpad">UNPAD</option>
+                <option value="itb">ITB</option>
+                <option value="upi">UPI</option>
+            </select>
+        </div>
+        <div>
+            <label for="sesi">Pilih Sesi yang diikuti:</label><br>
+            <input type="radio" id="sesi1" name="sesi" value="Sesi 1">
+            <label for="sesi1">Sesi 1 (08.00-12.00)</label><br>
+            <input type="radio" id="sesi2" name="sesi" value="Sesi 2">
+            <label for="sesi2">Sesi 2 (13.00-17.00)</label>
+        </div>
+        <div>
+            <label for="konsumsi">Konsumsi:</label><br>
+            <input type="checkbox" id="konsumsi1" name="konsumsi1" value="Mie Ayam">
+            <label for="konsumsi1">Mie Ayam</label><br>
+            <input type="checkbox" id="konsumsi2" name="konsumsi2" value="Nasi Goreng">
+            <label for="konsumsi2">Nasi Goreng</label><br>
+            <input type="checkbox" id="konsumsi3" name="konsumsi3" value="Es Teh">
+            <label for="konsumsi3">Es Teh</label>
+        </div>
+        <div>
+            <label for="catatan">Catatan Tambahan</label>
+            <textarea name="catatan" id="catatan"></textarea>
+        </div>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    
+</body>
+    
+</html>

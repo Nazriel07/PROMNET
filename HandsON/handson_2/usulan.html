@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ususlan</title>
+</head>
+
+<body>
+    <header>
+        <h1>Usulan Buku Baru</h1>
+        <nav>
+            <ul>
+                <h3>Menu</h3>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="detail.html">Ulasan</a></li>
+                <li><a href="usulan.html">Usulan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="">
+            <div>
+                <label for="nama">Nama Pengusul</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="judul">Judul Buku</label>
+                <input type="text" id="judul" name="judul" required>
+            </div>
+            <div>
+                <label for="kategori">Kategori</label>
+                <select name="kategori" id="kategori">
+                    <option value="fiksi">Fiksi</option>
+                    <option value="nonfiksi">NonFiksi</option>
+                </select>
+            </div>
+            <div>
+                <label for="prioritas">Prioritas:</label><br>
+                <input type="radio" id="prioritas1" name="prioritas1" value="tinggi">
+                <label for="tinggi">Prioritas Tinggi (Utama/Mendesak)</label><br>
+                <input type="radio" id="prioritas2" name="prioritas2" value="sedamg">
+                <label for="sedamg">Prioritas Sedang (Tambahan)</label><br>
+                <input type="radio" id="prioritas3" name="prioritas3" value="rendah">
+                <label for="rendah">Prioritas Rendah (Pilihan/Tersier)</label>                
+            </div>
+            <div>
+                <label for="alasan">Alasan Mengusulkan Buku Tersebut:</label><br>
+                <textarea name="alasan" id="alasan"></textarea>
+            </div>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </main>
+
+
+    <footer>
+        <p>
+            &copy; 2026 Katalog Buku Perpustakaan Kelas. Hak cipta dilindungi
+        </p>
+    </footer>
+</body>
+</html>
